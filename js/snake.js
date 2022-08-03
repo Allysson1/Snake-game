@@ -1,6 +1,7 @@
 const canvas = document.getElementById("canvas");
 const canvasContext = canvas.getContext("2d");
 
+
 window.onload = () => {
   gameLoop();
 };
@@ -14,6 +15,7 @@ function show() {
   draw();
 }
 
+// atualiza as ações do jogo
 function update() {
   canvasContext.clearRect(0, 0, canvas.width, canvas.height);
   snake.move();
